@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Editor</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <button class="btn theme-toggle" id="themeToggle">🌙</button>
+    <h1 style="margin-bottom: 2rem;">Pixel Art Editor</h1>
+    <div class="container">
+        <div class="tools">
+            <input type="color" id="colorPicker" class="color-picker">
+            <button class="btn" id="rainbowMode">Rainbow Mode</button>
+            <button class="btn" id="eyedropper">Color Picker</button>
+            <button class="btn" id="fillTool">Fill Tool</button>
+            <button class="btn" id="shader">Shader</button>
+            <button class="btn" id="lighter">Lighter</button>
+            <div class="slider-container">
+                <label for="gridSize">Grid Size: <span id="gridSizeValue">16x16</span></label>
+                <input type="range" id="gridSize" class="slider" min="1" max="60" value="16">
+            </div>
+            <button class="btn" id="clearBtn">Clear Canvas</button>
+            <button class="btn" id="undoBtn">Undo</button>
+            <button class="btn" id="saveBtn">Save Image</button>
+            <button class="btn" id="exportBtn">Export Image</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="pixelCanvas"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Site. Made By <a href="https://www.linkedin.com/in/Momo">Momo</a></p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
